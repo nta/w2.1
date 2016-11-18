@@ -10,6 +10,7 @@ public class Point2D
 {
     private double x;
     private double y;
+    private String name;
 
     /**
      * Default constructor.
@@ -17,6 +18,15 @@ public class Point2D
     public Point2D()
     {
 
+    }
+
+    /**
+     * Default constructor with a name.
+     * @param name the name of the point
+     */
+    public Point2D(String name)
+    {
+        this.name = name;
     }
 
     /**
@@ -28,6 +38,24 @@ public class Point2D
     {
         this.x = x;
         this.y = y;
+    }
+
+    /**
+     * Gets the current name.
+     * @return the name of the point
+     */
+    public String getName()
+    {
+        return name;
+    }
+
+    /**
+     * Sets the name of the point.
+     * @param name the point's new name
+     */
+    public void setName(String name)
+    {
+        this.name = name;
     }
 
     /**

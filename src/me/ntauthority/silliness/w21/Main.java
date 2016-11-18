@@ -56,7 +56,10 @@ public class Main
         // point test case
         {
             Point2D p1 = new Point2D(2.0, 2.0);
+            p1.setName("positive point");
+
             Point2D p2 = new Point2D(-2.0, -2.0);
+            p2.setName("negative point");
 
             System.out.format("distance of p1 to origin: %f\n", p1.distanceToOrigin());
             System.out.format("distance of p2 to origin: %f\n", p2.distanceToOrigin());
