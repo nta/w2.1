@@ -74,23 +74,13 @@ public class Main
 
         // array test case 1
         {
-            int[] array = new int[5];
-            array[0] = 4;
-            array[1] = 5;
-            array[2] = 6;
-            array[3] = 1;
-            array[4] = 2;
+            int[] array = { 4, 5, 6, 1, 2 };
 
             printArray("order move", orderStableMoveEven(array));
 
             System.out.format("second largest: %d\n", returnSecondLargest(array));
 
-            int[] array2 = new int[5];
-            array2[0] = 4;
-            array2[1] = 5;
-            array2[2] = 6;
-            array2[3] = 5;
-            array2[4] = 2;
+            int[] array2 = { 4, 5, 6, 5, 2 };
 
             System.out.format("equivalence: %s\n", setEquivalent(array, array2) ? "yes" : "no");
 
