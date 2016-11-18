@@ -117,4 +117,17 @@ public class Point2D
         double deltaY = this.getY() - other.getY();
         return Math.sqrt((deltaX * deltaX) + (deltaY * deltaY));
     }
+
+    /**
+     * Generated toString method.
+     * @return a string representation of the point
+     */
+    @Override
+    public String toString() {
+        return "Point2D{" +
+                "x=" + x +
+                ", y=" + y +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

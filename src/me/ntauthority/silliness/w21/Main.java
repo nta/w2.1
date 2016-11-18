@@ -67,6 +67,8 @@ public class Main
             System.out.format("distance of p2 to p1: %f\n", p2.distanceToPoint(p1));
             System.out.format("distance of p1 to p2: %f\n", p1.distanceToPoint(p2));
 
+            System.out.println("p1 is also " + p1);
+
             p2.setY(2.0);
 
             System.out.format("distance of p2 (w/ y %f) to origin: %f\n", p2.getY(), p2.distanceToOrigin());
